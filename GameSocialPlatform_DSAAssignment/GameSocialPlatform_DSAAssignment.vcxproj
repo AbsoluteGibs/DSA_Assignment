@@ -151,7 +151,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="gameBinarySearchTree.cpp" />
     <ClCompile Include="GameSocialPlatform_DSAAssignment.cpp" />
+    <ClCompile Include="user.cpp" />
+    <ClCompile Include="userBinarySearchTree.cpp" />
+    <ClCompile Include="userMessageRecords.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gameBinaryNode.h" />
+    <ClInclude Include="gameBinarySearchTree.h" />
+    <ClInclude Include="user.h" />
+    <ClInclude Include="userBinaryNode.h" />
+    <ClInclude Include="userBinarySearchTree.h" />
+    <ClInclude Include="userMessageRecords.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

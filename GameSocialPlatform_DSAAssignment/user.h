@@ -1,0 +1,32 @@
+#pragma once
+#include "userBinarySearchTree.h"
+#include "gameBinarySearchTree.h"
+#include "userMessageRecords.h"
+
+class user
+{
+private:
+	std::string name;
+	std::string bio;
+	double accountBalance;
+	userBinarySearchTree friendsList;
+	gameBinarySearchTree gameLibrary;
+
+	// this will be a dictionary, with the key being another user, and the value being a message record (to, from, message)
+	// I'll let you handle these zech, can refer to dictionary practical, stacks can be used to undo message
+	userMessageRecords records;
+
+	bool online; //true - online, false - offline
+
+public:
+	user();
+	void purchaseGame(); //add a game into the game library, unless the game already exists in the library
+	void playGame(); //play a game to notify friends who are online
+	void browseGameLibrary();
+	void browseFriends(); //can add the following options: online friends only/all friends
+	void editBio();
+	void messageFriend(); //creates a message 'record' between 1 user and another
+	void topUpBalance();
+};
+
+#pragma once
