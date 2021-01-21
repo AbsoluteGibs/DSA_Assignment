@@ -160,6 +160,7 @@
   <ItemGroup>
     <ClInclude Include="gameBinaryNode.h" />
     <ClInclude Include="gameBinarySearchTree.h" />
+    <ClInclude Include="platform.h" />
     <ClInclude Include="user.h" />
     <ClInclude Include="userBinaryNode.h" />
     <ClInclude Include="userBinarySearchTree.h" />
