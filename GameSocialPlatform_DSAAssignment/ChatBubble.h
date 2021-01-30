@@ -10,6 +10,21 @@ struct Message
 
 struct ChatBubble
 {
-	User u;
-	Message mInstance;
+	User user;
+	Message message;
+
+	ChatBubble(){}
+
+	// replace user into SYSTEM for system-generated messages
+	ChatBubble(User u, Message m)
+	{
+		user = u;
+		message = m;
+	}
+
+	~ChatBubble()
+	{
+		//deallocate user and message
+		//delete object
+	}
 };

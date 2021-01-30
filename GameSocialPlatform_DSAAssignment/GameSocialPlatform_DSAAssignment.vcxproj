@@ -151,7 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ChatBubble.cpp" />
+    <ClCompile Include="Chat.cpp" />
     <ClCompile Include="GameBinarySearchTree.cpp" />
     <ClCompile Include="GameSocialPlatform_DSAAssignment.cpp" />
     <ClCompile Include="User.cpp" />
@@ -159,6 +159,7 @@
     <ClCompile Include="UserMessageRecords.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chat.h" />
     <ClInclude Include="ChatBubble.h" />
     <ClInclude Include="GameBinarySearchTree.h" />
     <ClInclude Include="Platform.h" />
