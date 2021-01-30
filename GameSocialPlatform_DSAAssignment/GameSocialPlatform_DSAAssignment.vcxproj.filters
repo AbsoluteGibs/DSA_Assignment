@@ -18,39 +18,39 @@
     <ClCompile Include="GameSocialPlatform_DSAAssignment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="user.cpp">
+    <ClCompile Include="ChatBubble.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="userBinarySearchTree.cpp">
+    <ClCompile Include="GameBinarySearchTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gameBinarySearchTree.cpp">
+    <ClCompile Include="User.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="userMessageRecords.cpp">
+    <ClCompile Include="UserMessageRecords.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserBinarySearchTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="gameBinaryNode.h">
+    <ClInclude Include="ChatBubble.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="user.h">
+    <ClInclude Include="User.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="userBinarySearchTree.h">
+    <ClInclude Include="UserBinarySearchTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gameBinarySearchTree.h">
+    <ClInclude Include="GameBinarySearchTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="userBinaryNode.h">
+    <ClInclude Include="Platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="userMessageRecords.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="platform.h">
+    <ClInclude Include="UserMessageRecords.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

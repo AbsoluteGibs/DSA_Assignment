@@ -3,7 +3,7 @@
 #include "gameBinarySearchTree.h"
 #include "userMessageRecords.h"
 
-class user
+class User
 {
 private:
 	std::string name;
@@ -20,7 +20,7 @@ private:
 	bool online; //true - online, false - offline
 
 public:
-	user();
+	User();
 	void purchaseGame(); //add a game into the game library, unless the game already exists in the library
 	void playGame(); //play a game to notify friends who are online
 	void browseGameLibrary();
@@ -28,7 +28,7 @@ public:
 	void editBio();
 	void messageFriend(); //creates a message 'record' between 1 user and another, only from friends in friends list
 	void topUpBalance(double amt);
-	void addFriend(user u); //add invitation to the other user's list
+	void addFriend(User u); //add invitation to the other user's list
 	void acceptFriend(); //add both users into respective friends list, delete invitation
 	void declineFriend(); //delete invitation
 };

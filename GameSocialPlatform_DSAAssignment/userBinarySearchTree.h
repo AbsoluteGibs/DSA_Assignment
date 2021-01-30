@@ -1,52 +1,59 @@
 #pragma once
-#include "userBinaryNode.h"
+#include "User.h"
 
-class userBinarySearchTree
+struct UserBinaryNode
+{
+	User item;
+	UserBinaryNode* right;
+	UserBinaryNode* left;
+};
+
+class UserBinarySearchTree
 {
 private:
-	userBinaryNode* root;
+	UserBinaryNode* root;
 
 public:
-	userBinarySearchTree();
+	UserBinarySearchTree();
 
 	//search
-	userBinaryNode* search(user target);
-	userBinaryNode* search(userBinaryNode* t, user target);
+	UserBinaryNode* search(User target);
+	UserBinaryNode* search(UserBinaryNode* t, User target);
 
 	//insert
-	void insert(user item);
-	void insert(userBinaryNode*& t, user item);
+	void insert(User item);
+	void insert(UserBinaryNode*& t, User item);
 
 	//remove
-	void remove(user target);
-	void remove(userBinaryNode*& t, user target);
+	void remove(User target);
+	void remove(UserBinaryNode*& t, User target);
 
 	//traverse inorder
 	void inorder();
-	void inorder(userBinaryNode* t);
+	void inorder(UserBinaryNode* t);
 
 	//traverse preorder
 	void preorder();
-	void preorder(userBinaryNode* t);
+	void preorder(UserBinaryNode* t);
 
 	//traverse postorder
 	void postorder();
-	void postorder(userBinaryNode* t);
+	void postorder(UserBinaryNode* t);
 
 	//check if binary search tree is empty
 	bool isEmpty();
 
 	//count number of nodes in binary search tree
 	int countNodes();
-	int countNodes(userBinaryNode* t);
+	int countNodes(UserBinaryNode* t);
 
 	//compute height of binary search tree
 	int getHeight();
-	int getHeight(userBinaryNode* t);
+	int getHeight(UserBinaryNode* t);
 
 	//check if binary search tree is balanced
 	bool isBalanced();
-	bool isBalanced(userBinaryNode* t);
+	bool isBalanced(UserBinaryNode* t);
 
 	void display();
 };

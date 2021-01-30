@@ -151,20 +151,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gameBinarySearchTree.cpp" />
+    <ClCompile Include="ChatBubble.cpp" />
+    <ClCompile Include="GameBinarySearchTree.cpp" />
     <ClCompile Include="GameSocialPlatform_DSAAssignment.cpp" />
-    <ClCompile Include="user.cpp" />
-    <ClCompile Include="userBinarySearchTree.cpp" />
-    <ClCompile Include="userMessageRecords.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserBinarySearchTree.cpp" />
+    <ClCompile Include="UserMessageRecords.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="gameBinaryNode.h" />
-    <ClInclude Include="gameBinarySearchTree.h" />
-    <ClInclude Include="platform.h" />
-    <ClInclude Include="user.h" />
-    <ClInclude Include="userBinaryNode.h" />
-    <ClInclude Include="userBinarySearchTree.h" />
-    <ClInclude Include="userMessageRecords.h" />
+    <ClInclude Include="ChatBubble.h" />
+    <ClInclude Include="GameBinarySearchTree.h" />
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserBinarySearchTree.h" />
+    <ClInclude Include="UserMessageRecords.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
