@@ -162,6 +162,7 @@
   <ItemGroup>
     <ClInclude Include="Chat.h" />
     <ClInclude Include="ChatBubble.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="GameBinarySearchTree.h" />
     <ClInclude Include="Platform.h" />
     <ClInclude Include="User.h" />
