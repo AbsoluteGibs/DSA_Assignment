@@ -12,7 +12,7 @@ class User
 private:
 	string bio;
 	string name;
-	bool online;					//true - online, false - offline
+	bool online;					                //true - online, false - offline
 	string password;
 	float accountBalance;
 
@@ -22,7 +22,7 @@ private:
 
 	// this will be a dictionary, with the key being another user, and the value being a message record (to, from, message)
 	// I'll let you handle these zech, can refer to dictionary practical, stacks can be used to undo message
-	userMessageRecords records;
+	UserMessageRecords records;
 
 
 public:
@@ -30,12 +30,12 @@ public:
 	User (string n, string b, string p);
 
 	void editBio();
-	void viewProfile ();
-	
-	// Basic getters
-	float getBalance ();
-	string getName ();
-	string getBio ();
+
+	string getName() { return name; }
+	string getBio() { return bio; }
+	UserBinarySearchTree getFriendsList() { return friendsList; }
+  
+  void viewProfile ();
 
 	//Game related 
 	void purchaseGame(Game g);		//add a game into the game library, unless the game already exists in the library

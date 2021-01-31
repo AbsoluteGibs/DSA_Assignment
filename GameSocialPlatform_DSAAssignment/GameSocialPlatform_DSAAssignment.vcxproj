@@ -152,7 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Chat.cpp" />
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="ChatBubble.cpp" />
     <ClCompile Include="GameBinarySearchTree.cpp" />
     <ClCompile Include="GameSocialPlatform_DSAAssignment.cpp" />
     <ClCompile Include="User.cpp" />

@@ -33,7 +33,7 @@
     <ClCompile Include="Chat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="ChatBubble.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
