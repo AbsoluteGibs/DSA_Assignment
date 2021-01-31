@@ -9,13 +9,13 @@ private:
 	std::string name;
 	std::string bio;
 	double accountBalance;
-	userBinarySearchTree friendsList;
-	userBinarySearchTree userInvitations; //accept/decline friend request
-	gameBinarySearchTree gameLibrary;
+	UserBinarySearchTree friendsList;
+	UserBinarySearchTree userInvitations; //accept/decline friend request
+	GameBinarySearchTree gameLibrary;
 
 	// this will be a dictionary, with the key being another user, and the value being a message record (to, from, message)
 	// I'll let you handle these zech, can refer to dictionary practical, stacks can be used to undo message
-	userMessageRecords records;
+	UserMessageRecords records;
 
 	bool online; //true - online, false - offline
 
@@ -31,6 +31,11 @@ public:
 	void addFriend(User u); //add invitation to the other user's list
 	void acceptFriend(); //add both users into respective friends list, delete invitation
 	void declineFriend(); //delete invitation
+
+	// getters
+	std::string getName() { return name; }
+	std::string getBio() { return bio; }
+	UserBinarySearchTree getFriendsList() { return friendsList; }
 };
 
 #pragma once

@@ -9,15 +9,18 @@ class Chat
 private:
 	struct Node
 	{
+		User user;
 		ChatBubble item;
 		Node* next;
 	};
 
 	Node* topNode;
 
+
 public:
 	Chat() { topNode = NULL; }		// constructor
 	~Chat() { while (topNode != NULL) { pop(); } }		// destructor
+
 	bool push(ChatBubble item);
 	bool pop();
 	bool pop(ChatBubble& item);

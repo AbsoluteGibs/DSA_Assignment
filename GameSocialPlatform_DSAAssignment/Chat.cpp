@@ -2,7 +2,7 @@
 
 bool Chat::push(ChatBubble item)
 {
-	Node* newNode = new Node();
+	Node* newNode = new Node;
 	newNode->item = item;
 	newNode->next = NULL;
 
@@ -15,6 +15,8 @@ bool Chat::push(ChatBubble item)
 		newNode->next = topNode;
 		topNode = newNode;
 	}
+
+
 
 	return true;
 }
@@ -72,7 +74,7 @@ void Chat::displayInOrder()
 
 	while (current != NULL)
 	{
-		std::cout << current->item.message.text << "\t";
+		std::cout << current->item.getMessage() << "\t";
 		current = current->next;
 	}
 
@@ -102,7 +104,6 @@ void Chat::displayInOrderOfInsertion()
 	}
 }
 
-
 // recursion ? (for reference sake)
 void Chat::printForward() { printForward(topNode); std::cout << std::endl; }
 void Chat::printForward(Node* temp)
@@ -110,6 +111,17 @@ void Chat::printForward(Node* temp)
 	if (temp != NULL)
 	{
 		printForward(temp->next);
-		std::cout << temp->item.message.text << "\t";
+		std::string senderName = temp->item.getSender().getName();
+		std::string recipientName = temp->item.getRecipient().getName();
+		std::string message = temp->item.getMessage();
+
+		if (senderName == temp->user.getName())
+		{
+			std::cout << senderName << " ::> " << message << "\t";
+		}
+		else
+		{
+			std::cout << message << " <:: " << recipientName << "\t";
+		}
 	}
 }

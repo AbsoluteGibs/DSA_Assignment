@@ -1,30 +1,22 @@
 #pragma once
 #include "User.h"
 
-struct Message
+class ChatBubble
 {
+private:
 	User to;
 	User from;
-	std::string text;
-};
+	std::string message;
 
-struct ChatBubble
-{
-	User user;
-	Message message;
-
-	ChatBubble(){}
+public:
+	ChatBubble();
+	~ChatBubble();
 
 	// replace user into SYSTEM for system-generated messages
-	ChatBubble(User u, Message m)
-	{
-		user = u;
-		message = m;
-	}
+	ChatBubble(User t, User f, std::string m);
 
-	~ChatBubble()
-	{
-		//deallocate user and message
-		//delete object
-	}
+	//getters
+	std::string getMessage();
+	User getSender();
+	User getRecipient();
 };
