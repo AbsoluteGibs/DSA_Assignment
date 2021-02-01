@@ -1,12 +1,9 @@
 #pragma once
-#include "User.h"
+#include <string>
+#include <iostream>
 
-struct UserBinaryNode
-{
-	User item;
-	UserBinaryNode* right;
-	UserBinaryNode* left;
-};
+#include "UserBinaryNode.h"
+#include "AVL_Tree.h"
 
 class UserBinarySearchTree
 {

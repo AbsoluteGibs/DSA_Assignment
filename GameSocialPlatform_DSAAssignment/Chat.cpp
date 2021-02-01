@@ -16,8 +16,6 @@ bool Chat::push(ChatBubble item)
 		topNode = newNode;
 	}
 
-
-
 	return true;
 }
 

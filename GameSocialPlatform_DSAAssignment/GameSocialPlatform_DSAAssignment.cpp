@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Platform.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Platform p;
+	p.initialize();
 }

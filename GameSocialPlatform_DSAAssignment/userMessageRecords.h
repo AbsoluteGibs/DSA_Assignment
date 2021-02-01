@@ -2,6 +2,7 @@
 #include "Chat.h"
 
 // LINKED LIST (Doubly maybe?)
+class User;
 
 class UserMessageRecords
 {

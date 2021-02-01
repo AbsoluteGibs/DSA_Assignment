@@ -4,6 +4,8 @@
 
 // STACK DATA STRUCTURE
 
+class User;
+
 class Chat
 {
 private:

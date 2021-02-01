@@ -1,19 +1,7 @@
 #pragma once
 #include <string>
-
-struct Game
-{
-	std::string name;
-	std::string description;
-	double price;
-};
-
-struct GameBinaryNode
-{
-	Game item;
-	GameBinaryNode* right;
-	GameBinaryNode* left;
-};
+#include <iostream>
+#include "AVL_Tree.h"
 
 class GameBinarySearchTree
 {
@@ -22,6 +10,9 @@ private:
 
 public:
 	GameBinarySearchTree();
+
+	// to compute which of the 2 is more "alphabetically forward", with A < Z. Returns true if target > result.
+	// bool isAlphabeticallyForward(std::string result, std::string target);
 
 	//search
 	GameBinaryNode* search(Game target);

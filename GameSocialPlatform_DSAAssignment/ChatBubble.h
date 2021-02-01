@@ -1,6 +1,8 @@
 #pragma once
 #include "User.h"
 
+class User;
+
 class ChatBubble
 {
 private:
